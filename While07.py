@@ -6,4 +6,13 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    a = 0 
+    count = 0
+    while a < len(s):
+        if s[a].isdigit() and int(s[a])%2==0:
+            a+=1 
+        count+=1
+
+    return count 
+
+print(main('41554894987987987456458'))
