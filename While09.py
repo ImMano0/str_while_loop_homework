@@ -6,4 +6,13 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    a = 0
+    count = 0
+    while a < len(s):
+        if s[a].isdigit():
+            a += int(s[count])
+        count += 1
+
+    return a 
+
+print(main('84848484'))
